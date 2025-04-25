@@ -13,6 +13,10 @@ app.use((req, res) =>
   res.status(404).sendFile(path.join(__dirname + "/404.html"))
 );
 
+app.use((err, req, res, next) => {
+  res.status(err.statusCode || 500).send(err.message);
+});
+
 const PORT = 3000;
 
 app.listen(PORT, () => {

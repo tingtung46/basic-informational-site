@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/tingtung46/basic-informational-site#readme",
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "express-async-handler": "^1.2.0"
   }
 }
